@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Server.res" /d "_DEBUG" /d "_AFXDLL" "E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\Server.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Server.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\ClientSocket.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\Server.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\ServerDlg.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\ServerSocket.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD8.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Server.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Server\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Server.pdb" /debug /machine:I386 /out:"Debug/Server.exe" /pdbtype:sept 
+".\Debug\ClientSocket.obj"
+".\Debug\Server.obj"
+".\Debug\ServerDlg.obj"
+".\Debug\ServerSocket.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Server.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientSocket.cpp
+Server.cpp
+ServerDlg.cpp
+ServerSocket.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Server.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ClientSocket.sbr" ".\Debug\Server.sbr" ".\Debug\ServerDlg.sbr" ".\Debug\ServerSocket.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Server.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

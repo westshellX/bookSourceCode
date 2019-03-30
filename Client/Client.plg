@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Client - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Client.res" /d "_DEBUG" /d "_AFXDLL" "E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\Client.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Client.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\Client.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\ClientDlg.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\login.cpp"
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\Mysocket.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD2.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Client.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\程序测试\Visual C++开发技术大全\宋坤\mingrisoft\dxyy\20\02\01\Client\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD3.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD4.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Client.pdb" /debug /machine:I386 /out:"Debug/Client.exe" /pdbtype:sept 
+".\Debug\Client.obj"
+".\Debug\ClientDlg.obj"
+".\Debug\login.obj"
+".\Debug\Mysocket.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Client.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Client.cpp
+ClientDlg.cpp
+login.cpp
+Mysocket.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Client.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
