@@ -1,0 +1,41 @@
+﻿生成启动时间为 2019/3/31 14:03:04。
+     1>项目“F:\Visual Studio 2010\Projects\bookSourceCode\UDProcsComm\UDProcsComm.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\UDProcsComm.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\UDProcsComm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\UDProcsComm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt UDProcsComm.cpp UDProcsCommDlg.cpp
+         UDProcsCommDlg.cpp
+     1>f:\visual studio 2010\projects\booksourcecode\udprocscomm\udprocscommdlg.cpp(338): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+         UDProcsComm.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\UDProcsComm.res" UDProcsComm.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\UDProcsComm.exe.embed.manifest.res" Debug\UDProcsComm_manifest.rc 
+       Link:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\UDProcsComm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.lib" /MACHINE:X86 Debug\UDProcsComm.res
+         Debug\UDProcsComm.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\UDProcsComm.obj
+         Debug\UDProcsCommDlg.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\UDProcsComm.exe.embed.manifest" /manifest Debug\UDProcsComm.exe.intermediate.manifest "E:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\UDProcsComm.exe.embed.manifest.res" Debug\UDProcsComm_manifest.rc 
+       LinkEmbedManifest:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\UDProcsComm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.lib" /MACHINE:X86 Debug\UDProcsComm.res
+         Debug\UDProcsComm.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\UDProcsComm.obj
+         Debug\UDProcsCommDlg.obj
+         UDProcsComm.vcxproj -> F:\Visual Studio 2010\Projects\bookSourceCode\Debug\UDProcsComm.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\UDProcsComm.unsuccessfulbuild”。
+         正在对“Debug\UDProcsComm.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\Visual Studio 2010\Projects\bookSourceCode\UDProcsComm\UDProcsComm.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.99
