@@ -1,0 +1,45 @@
+﻿生成启动时间为 2019/3/31 14:12:07。
+     1>项目“F:\Visual Studio 2010\Projects\bookSourceCode\SelfRoom\SelfRoom.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\SelfRoom.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\SelfRoom.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SelfRoom.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ClientSocket.cpp SelfRoom.cpp SelfRoomDlg.cpp ServerSocket.cpp
+         ServerSocket.cpp
+         SelfRoomDlg.cpp
+         SelfRoom.cpp
+         ClientSocket.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\SelfRoom.res" SelfRoom.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\SelfRoom.exe.embed.manifest.res" Debug\SelfRoom_manifest.rc 
+       Link:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\SelfRoom.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.lib" /MACHINE:X86 Debug\SelfRoom.res
+         Debug\SelfRoom.exe.embed.manifest.res
+         Debug\ClientSocket.obj
+         Debug\SelfRoom.obj
+         Debug\SelfRoomDlg.obj
+         Debug\ServerSocket.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\SelfRoom.exe.embed.manifest" /manifest Debug\SelfRoom.exe.intermediate.manifest "E:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\SelfRoom.exe.embed.manifest.res" Debug\SelfRoom_manifest.rc 
+       LinkEmbedManifest:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\SelfRoom.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.lib" /MACHINE:X86 Debug\SelfRoom.res
+         Debug\SelfRoom.exe.embed.manifest.res
+         Debug\ClientSocket.obj
+         Debug\SelfRoom.obj
+         Debug\SelfRoomDlg.obj
+         Debug\ServerSocket.obj
+         Debug\stdafx.obj
+         SelfRoom.vcxproj -> F:\Visual Studio 2010\Projects\bookSourceCode\Debug\SelfRoom.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\SelfRoom.unsuccessfulbuild”。
+         正在对“Debug\SelfRoom.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\Visual Studio 2010\Projects\bookSourceCode\SelfRoom\SelfRoom.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.34
