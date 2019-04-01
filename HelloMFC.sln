@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelfChat", "SelfChat\SelfCh
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelfRoom", "SelfRoom\SelfRoom.vcxproj", "{C390FA7D-CEE4-4CA9-9BA9-E7911A5B608E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UseCjComNet", "UseCjComNet\UseCjComNet.vcxproj", "{44B1EBFE-257E-4A8F-9642-02F5992DB94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -120,6 +122,12 @@ Global
 		{C390FA7D-CEE4-4CA9-9BA9-E7911A5B608E}.Release|Win32.Build.0 = Release|Win32
 		{C390FA7D-CEE4-4CA9-9BA9-E7911A5B608E}.Template|Win32.ActiveCfg = Template|Win32
 		{C390FA7D-CEE4-4CA9-9BA9-E7911A5B608E}.Template|Win32.Build.0 = Template|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Debug|Win32.Build.0 = Debug|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Release|Win32.ActiveCfg = Release|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Release|Win32.Build.0 = Release|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Template|Win32.ActiveCfg = Release|Win32
+		{44B1EBFE-257E-4A8F-9642-02F5992DB94C}.Template|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
