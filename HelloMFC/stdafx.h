@@ -39,9 +39,12 @@
 
 
 
+#include <afxsock.h>            // MFC Ì×½Ó×ÖÀ©Õ¹
 
 
-
+//ADD
+#define SCJ_NETRECV WM_USER+102
+#define SCJ_MATFILE WM_USER+103
 
 
 

@@ -7,6 +7,9 @@
 class scjNet; 
 
 #define CLIENTMAX 100
+
+
+
 class scjSocket:public CSocket
 {
 protected:
@@ -136,6 +139,7 @@ public:
 
 	scjNet(CWnd *,int,char *,int ptNum=0);
 
+	//server¶Ë
 	scjNet(CWnd *,int ptNum=0);
 
 	~scjNet();

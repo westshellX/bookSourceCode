@@ -50,6 +50,7 @@ END_MESSAGE_MAP()
 
 CHelloMFCDlg::CHelloMFCDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CHelloMFCDlg::IDD, pParent)
+	, sPort(0)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -57,12 +58,17 @@ CHelloMFCDlg::CHelloMFCDlg(CWnd* pParent /*=NULL*/)
 void CHelloMFCDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_IPADDRESS_IP, ServerIP);
+	DDX_Control(pDX, IDC_EDIT_PORT, ServerPort);
+	DDX_Text(pDX, IDC_EDIT_PORT, sPort);
 }
 
 BEGIN_MESSAGE_MAP(CHelloMFCDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_CONNECT, &CHelloMFCDlg::OnBnClickedButtonConnect)
+	ON_MESSAGE(SCJ_NETRECV,scjNetRecv)
 END_MESSAGE_MAP()
 
 
@@ -151,3 +157,45 @@ HCURSOR CHelloMFCDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+BOOL CHelloMFCDlg::PreCreateWindow(CREATESTRUCT& cs)
+{
+	// TODO: 在此添加专用代码和/或调用基类
+	return CDialogEx::PreCreateWindow(cs);
+}
+
+
+void CHelloMFCDlg::OnBnClickedButtonConnect()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	BYTE nFild[4];
+	CString sIP;
+	UpdateData();
+
+	ServerIP.GetAddress(nFild[0],nFild[1],nFild[2],nFild[3]);
+	sIP.Format("%d.%d.%d.%d",nFild[0],nFild[1],nFild[2],nFild[3]);
+
+	char* ipStr=sIP.GetBuffer(sIP.GetLength());
+	//发起连接请求
+	int ClientID=1;
+	pNet=new scjNet(this,ClientID,ipStr,sPort);
+}
+LRESULT CHelloMFCDlg::scjNetRecv(WPARAM wParam,LPARAM lParam)
+{
+	//自定义的关闭与缓冲区有消息
+	//CString str;
+	switch (WSAGETSELECTEVENT(lParam))
+	{
+	case FD_READ:
+		//if(recvfrom(ServerSocket,(char *)&msg,sizeof(msg),0,(LPSOCKADDR)&m_sockServerAddr,(int *)&socklen) == SOCKET_ERROR)		
+		//{
+		//	list.AddString("发送失败!对方主机或应用进程没有启动");
+		//	return 0;
+		//}
+		//str.Format("%s",msg.msg);
+		//list.AddString(str);
+		break;
+	}
+	return 0L;
+}

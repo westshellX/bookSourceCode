@@ -1,6 +1,6 @@
 #if !defined __SCJCLASS
 #define __SCJCLASS
-#include "MyMessage.h"
+//#include "MyMessage.h"
 
 class CDlyAct
 {
@@ -30,7 +30,7 @@ class ByteBuf{
 
 	char Get(char *);
 
-	io_out(int );
+	int io_out(int );
 };
 
 

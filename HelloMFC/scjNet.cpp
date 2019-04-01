@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include <mmsystem.h> 
 #include "scjNet.h"
@@ -166,7 +165,11 @@ void scjNet::Create(CWnd *pp,int idNum,char *svrAddr,int ptNum)
 	BOOL b;
 	char s[10];
 	int i1,i2,i3,i4;
-	psockServer=NULL;	
+	if(psockServer!=NULL)
+	{
+		delete psockServer;
+		psockServer=NULL;	
+	}
 	psockClient=new scjSocket(this);	
 	psockClient->Create();
 	if(svrAddr) b=psockClient->Connect(svrAddr,700+ptNum);
@@ -196,9 +199,9 @@ void scjNet::Create(CWnd *pp,int idNum,char *svrAddr,int ptNum)
 	if(!TmpBuf) AfxMessageBox("Here");
 }
 
-scjNet::scjNet(CWnd *pp,int ptNum)
+scjNet::scjNet(CWnd *pp,int portNum)
 {
-char s[10];
+	char s[10];
 	strm=NULL;
 	SendAll=1;
 	if(!vsl) vsl=new SHIP[SHIPMAX];
@@ -213,7 +216,7 @@ char s[10];
 	clientNum=-1;
 	psockClient=NULL;	
 	psockServer=new scjSocket(this);	
-	psockServer->Create(700+ptNum);
+	psockServer->Create(700+portNum);
 	psockServer->Listen();
 	sprintf(s,"netrec");
 	strm=fopen(s,"w");
@@ -532,31 +535,31 @@ int i,tt,act;
 
 int scjNet::Accept()
 {
-char s[40];
-LPCTSTR pc;
-CString name;
-UINT npt=0;
-SOCKADDR sa;
-int i1,i2,i3,i4;
-int sal=sizeof(SOCKADDR); 
+	char s[40];
+	LPCTSTR pc;
+	CString name;
+	UINT npt=0;
+	SOCKADDR sa;
+	int i1,i2,i3,i4;
+	int sal=sizeof(SOCKADDR); 
 	connect++;
 	for (i=1;i<CLIENTMAX;i++)
 		if(!psockRecv[i]) break;
-//	i=0;
+	//	i=0;
 	psockRecv[i]=new scjSocket(this);
 	psockServer->Accept(*psockRecv[i],&sa,&sal);
 	psockRecv[i]->GetPeerName(name,npt);
 	pc=(LPCTSTR)name;
 	sscanf(name,"%d.%d.%d.%d",&i1,&i2,&i3,&i4);
-//	psockRecv[i]->sockID=atoi(&pc[12]);
+	//	psockRecv[i]->sockID=atoi(&pc[12]);
 	psockRecv[i]->sockID=i4;
 	if(psockRecv[i]->sockID>=200){
 		AfxMessageBox("Bad Ownship Id");
 		return 0;
 	}
 	sprintf(s,"CONNECTED:%d\n",psockRecv[i]->sockID);
-//	if(psockRecv[psockRecv[i]->sockID]) delete psockRecv[psockRecv[i]->sockID];
-//	psockRecv[psockRecv[i]->sockID]=psockRecv[i];
+	//	if(psockRecv[psockRecv[i]->sockID]) delete psockRecv[psockRecv[i]->sockID];
+	//	psockRecv[psockRecv[i]->sockID]=psockRecv[i];
 	strcpy(StrRecv[0],s);
 	pParent->PostMessage(SCJ_NETRECV,0,(long)psockRecv[i]->sockID);
 #ifdef MYDEBUG
@@ -565,7 +568,7 @@ int sal=sizeof(SOCKADDR);
 	fprintf(strm,"%s check in\n",pc);
 
 	sprintf(s,"@T%d\n",timeGetTime());
-//	psockRecv[i]->Send(s,strlen(s));
+	//	psockRecv[i]->Send(s,strlen(s));
 	psockRecv[i]->Send(s,12);
 
 	return connect;
@@ -704,7 +707,7 @@ int nSize,cnt,t;
 
 int scjNet::Receive(scjSocket *psockRecv)
 {
-static cnt;
+	static int cnt;
 CString s;
 int nSize,num,i,len,more=0;
 char cc[50];
