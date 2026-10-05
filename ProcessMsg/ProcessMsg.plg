@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ProcessMsg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP347.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ProcessMsg.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp"
+"D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsg.cpp"
+"D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp"
+"D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP347.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP348.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ProcessMsg.pdb" /debug /machine:I386 /out:"Debug/ProcessMsg.exe" /pdbtype:sept 
+".\Debug\ModuleDlg.obj"
+".\Debug\ProcessMsg.obj"
+".\Debug\ProcessMsgDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ThreadDlg.obj"
+".\Debug\ProcessMsg.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP348.tmp"
+<h3>Output Window</h3>
+Compiling...
+ModuleDlg.cpp
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(53) : error C2065: 'MODULEENTRY32' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(53) : error C2146: syntax error : missing ';' before identifier 'me32'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(53) : error C2065: 'me32' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(54) : error C2228: left of '.dwSize' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(57) : error C2039: 'CreateToolhelp32Snapshot' : is not a member of '`global namespace''
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(57) : error C2065: 'CreateToolhelp32Snapshot' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(57) : error C2065: 'TH32CS_SNAPMODULE' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(57) : error C2440: '=' : cannot convert from 'int' to 'void *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(62) : error C2039: 'Module32First' : is not a member of '`global namespace''
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(62) : error C2065: 'Module32First' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(66) : error C2228: left of '.th32ModuleID' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(67) : error C2228: left of '.szModule' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(70) : error C2039: 'Module32Next' : is not a member of '`global namespace''
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(70) : error C2065: 'Module32Next' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(92) : error C2065: 'EnumProcessModules' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(94) : error C2065: 'HMODLE' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(96) : error C2065: 'GetModuleFileNameEx' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(96) : error C2065: 'szModeName' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(109) : error C2668: 'CString::CString' : ambiguous call to overloaded function
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(122) : error C2065: 'CProcessMgDlg' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ModuleDlg.cpp(122) : error C2059: syntax error : ')'
+ProcessMsg.cpp
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2146: syntax error : missing ';' before identifier 'm_statusbar'
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2501: 'CSatusBarCtrl' : missing storage-class or type specifiers
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2501: 'm_statusbar' : missing storage-class or type specifiers
+ProcessMsgDlg.cpp
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2146: syntax error : missing ';' before identifier 'm_statusbar'
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2501: 'CSatusBarCtrl' : missing storage-class or type specifiers
+d:\my documents\coding\c++\线程编程\processmsg\processmsgdlg.h(55) : error C2501: 'm_statusbar' : missing storage-class or type specifiers
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(20) : error C2065: 'PROCWSS_QUERY_INFORMATION' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(23) : error C2065: 'HMODLE' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(23) : error C2146: syntax error : missing ';' before identifier 'hMod'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(23) : error C2065: 'hMod' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(25) : error C2065: 'EnumProcessModules' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(27) : error C2065: 'GetModuleFileNameEx' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(42) : error C2065: 'GetPriotrityClass' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ProcessMsgDlg.cpp(51) : error C2065: 'SZREALTIME' : undeclared identifier
+ThreadDlg.cpp
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(61) : error C2065: 'CProcessMsgDlg' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(61) : error C2059: syntax error : ')'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2065: 'THREADENTRY32' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2146: syntax error : missing ';' before identifier 'te32'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2065: 'te32' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2059: syntax error : '{'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2143: syntax error : missing ';' before '{'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(76) : error C2143: syntax error : missing ';' before '}'
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(77) : error C2065: 'CreateToolhelp32Snapshot' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(77) : error C2065: 'TH32CS_SNAPTHREAD' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(77) : error C2440: '=' : cannot convert from 'int' to 'void *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(82) : error C2228: left of '.dwSize' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(84) : error C2065: 'Thread32First' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(88) : error C2228: left of '.th32OwnerProcessID' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(88) : error C2065: 'dwProcessId' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(91) : error C2065: 'buffer' : undeclared identifier
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(92) : error C2228: left of '.th32ThreadID' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(95) : error C2228: left of '.tpBasePri' must have class/struct/union type
+D:\My Documents\Coding\C++\线程编程\ProcessMsg\ThreadDlg.cpp(100) : error C2065: 'Thread32Next' : undeclared identifier
+Generating Code...
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+ProcessMsg.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

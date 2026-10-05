@@ -8,3 +8,10 @@
 /*/*/*/*.sln
 *.vcproj
 *.htm
+*.dsp
+*.dsw
+*.clw
+*.ncb
+*.opt
+*.aps
+*.plg
