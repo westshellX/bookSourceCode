@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12224.181
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloMFC", "HelloMFC\HelloMFC.vcxproj", "{BDCE6C8A-735B-4710-B957-F8E90217FFF7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetIPAndPort", "GetIPAndPort\GetIPAndPort.vcxproj", "{3A5F819C-9422-4C5F-9D6E-2F6277938B94}"
@@ -38,6 +40,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UIThreadDemo1", "UIThreadDemo1\UIThreadDemo1.vcxproj", "{D9A51DB7-0F92-B8FD-4A3A-1296141F6913}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UIThreadDemo2", "UIThreadDemo2\UIThreadDemo2.vcxproj", "{905B1206-882A-2C5D-DA22-F09A1E35FD72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThreadWork", "ThreadWork", "{187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_5_5进程的创建", "3_5_5进程的创建\3_5_5进程的创建.vcxproj", "{715FA94C-66A1-024C-3739-D92000F55AD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_5_9多线程", "3_5_9多线程\3_5_9多线程.vcxproj", "{462012FA-0403-D207-D0CD-56BACBAD9879}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -160,8 +168,30 @@ Global
 		{905B1206-882A-2C5D-DA22-F09A1E35FD72}.Release|Win32.Build.0 = Release|Win32
 		{905B1206-882A-2C5D-DA22-F09A1E35FD72}.Template|Win32.ActiveCfg = Template|Win32
 		{905B1206-882A-2C5D-DA22-F09A1E35FD72}.Template|Win32.Build.0 = Template|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Debug|Win32.Build.0 = Debug|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Release|Win32.ActiveCfg = Release|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Release|Win32.Build.0 = Release|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Template|Win32.ActiveCfg = Template|Win32
+		{715FA94C-66A1-024C-3739-D92000F55AD9}.Template|Win32.Build.0 = Template|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Debug|Win32.ActiveCfg = Debug|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Debug|Win32.Build.0 = Debug|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Release|Win32.ActiveCfg = Release|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Release|Win32.Build.0 = Release|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Template|Win32.ActiveCfg = Template|Win32
+		{462012FA-0403-D207-D0CD-56BACBAD9879}.Template|Win32.Build.0 = Template|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D38BE0FC-7320-D22D-774B-640AD346A783} = {187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}
+		{D9A51DB7-0F92-B8FD-4A3A-1296141F6913} = {187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}
+		{905B1206-882A-2C5D-DA22-F09A1E35FD72} = {187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}
+		{715FA94C-66A1-024C-3739-D92000F55AD9} = {187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}
+		{462012FA-0403-D207-D0CD-56BACBAD9879} = {187A5D7E-2FEF-4C32-95F3-D3F2A1E12E19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37D5C3E6-5939-4A08-AB18-34466DCB93A1}
 	EndGlobalSection
 EndGlobal
