@@ -15,7 +15,7 @@ typedef struct ballinfo{
 	HWND hwnd;
 	int speed;
 	int pos;
-	CRect rect;
+	CRect rect;     //长方形矩形区域，采用Height()表示ball的直径
 	CRect realrect;
 }theball,*lpball;
 

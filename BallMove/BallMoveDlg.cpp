@@ -230,7 +230,7 @@ DWORD WINAPI BallMove(LPVOID ballparameter)
 		{
 			temp->pos++;
 		}
-		CRect rect(temp->pos+temp->realrect.left-2,temp->realrect.top-2,temp->pos+temp->realrect.left+temp->rect.Height()+2,temp->realrect.bottom+2);
+		CRect rect(temp->pos + temp->realrect.left - 2, temp->realrect.top - 2, temp->pos + temp->realrect.left + temp->rect.Height() + 2, temp->realrect.bottom + 2);   //上下左右各扩大2像素矩形区域，避免出现残影
 		InvalidateRect(temp->hwnd,rect,true);
 		Sleep(temp->speed);
 	}
